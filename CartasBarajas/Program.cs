@@ -10,8 +10,9 @@ namespace CartasBarajas
     {
         static void Main(string[] args)
         {
-            
+
             Baraja baraja = new Baraja();
+            baraja.Barajar();
             Console.WriteLine(baraja.Mostrar());
             Console.ReadKey();
 

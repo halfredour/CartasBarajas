@@ -31,9 +31,10 @@ namespace CartasBarajas
         public void Barajar()
         {
             Random rnd = new Random();
-            int aleatorio = rnd.Next(0, 52);
+
             for (int i = 0; i < cartas.Count; i++)
             {
+                int aleatorio = rnd.Next(0, 52);
                 Carta randomCarta = cartas[aleatorio]; // Guardar carta de la posicion aleatoria
                 cartas[aleatorio] = cartas[i]; // Añadir en la posicion aleatoria el valor de la carta i
                 cartas[i] = randomCarta; // En i añadimos la carta guardada temporalmente
